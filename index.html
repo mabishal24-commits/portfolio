@@ -1,38 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+  <!-- Navbar -->
+  <header>
+    <h2>MyPortfolio</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        <h1>Hello, I'm <span>Bishal Mandal</span></h1>
-        <p class="tagline">Web Development Student</p>
-
-        <section>
-            <h2>About Me</h2>
-            <p>
-                I am learning web development using HTML, CSS and JavaScript.
-                This is my first portfolio website.
-            </p>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <p> Currently learning</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </section>
-
-        <button onclick="showMessage()">Click Me</button>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>BISHAL MANDAL</span></h1>
+      <p>A beginner web developer learning HTML, CSS & JavaScript.</p>
+      <button onclick="showMessage()">Say Hi 👋</button>
     </div>
 
-    <script src="script.js"></script>
+    <div class="hero-img">
+      <img src="images/myphoto.jpg" alt="My Photo">
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+    <div class="cards">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Basic Design</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">Portfolio Website</div>
+      <div class="card">Landing Page</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: bisu99482@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 BISHAL MANDAL</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

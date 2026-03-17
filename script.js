@@ -1,3 +1,4 @@
+// Simple button interaction
 function showMessage() {
-    alert("Thanks for visiting my portfolio!");
+  alert("Thanks for visiting my portfolio 😊");
 }
